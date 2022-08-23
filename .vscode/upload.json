@@ -1,0 +1,22 @@
+{
+    "server":{
+        "host":"10.9.3.200",
+        "port":21,
+        "user":"root",
+        "password":"root"
+    },
+    "files":[
+        {
+            "localfile":"/home/sean/Project/upload/upload-ftp/src/upload.js",
+            "remotefile":"/apps/test/f.js"
+        },
+        {
+            "localfile":"/home/sean/Project/upload/upload-ftp/src/upload.js66",
+            "remotefile":"/apps/test/f.js"
+        },
+        {
+            "localfile":"/home/sean/Project/upload/upload-ftp/src/upload.js",
+            "remotefile":"/apps/test/f.js"
+        }
+    ]
+}

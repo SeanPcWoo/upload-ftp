@@ -2,7 +2,10 @@
   "name": "upload-ftp",
   "displayName": "upload-ftp",
   "description": "a ftp tool to help upload loacl file to server.",
-  "version": "0.0.1",
+  "repository": "https://github.com/SeanPcWoo/upload-ftp",
+  "publisher": "wupengcheng",
+  "icon": "images/icon.png",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.70.0"
   },

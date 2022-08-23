@@ -48,11 +48,15 @@ Of course, you can also just click the folder and use `alt + d` to upload quickl
 ## Release Notes
 
 
-### 1.0.0
+### 0.0.1
 
 - support create directories automatically;
 - support upload more than one file at a time;
 - support 'workspace' mode in vscode.
+
+### 0.0.2
+
+- Add icon.
 
 
 

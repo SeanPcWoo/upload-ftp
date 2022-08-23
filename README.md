@@ -1,65 +1,62 @@
-# upload-ftp README
+# upload-ftp 
 
-This is the README for your extension "upload-ftp". After writing up a brief description, we recommend including the following sections.
+This is a vscode extension called "upload-ftp". It helps to upload files to FTP Server Simply. 
 
+---
 ## Features
+This tool has these features now:
+- support create directories automatically;
+- support upload more than one file at a time;
+- support 'workspace' mode in vscode.
+---
+## Usage
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+First, you need to create a upload.json file in .vscode folder.
 
-For example if there is an image subfolder under your extension project workspace:
+The upload.json file format is easy like this:
+```json
+{
+    "server": {
+        "host": "10.9.3.200",
+        "port": 21,
+        "user": "root",
+        "password": "root"
+    },
+    "files1": [
+        {
+            "localfile": "/home/sean/Project/upload/test/TestApp",
+            "remotefile": "/apps/test/TestApp"
+        },
+        {
+            "localfile": "/home/sean/Project/upload/test/Test.js",
+            "remotefile": "/apps/test/test.js"
+        }
+    ]
+}
+```
 
-\!\[feature X\]\(images/feature-x.png\)
+After that, you can right click on the .vscode folder or .vscode father folder, and choose the 'upload' button, then this tool will help you do upload action.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Of course, you can also just click the folder and use `alt + d` to upload quickly.
 
-## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
+---
 ## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
 
 ---
 
-## Working with Markdown
+## Release Notes
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
+### 1.0.0
 
-## For more information
+- support create directories automatically;
+- support upload more than one file at a time;
+- support 'workspace' mode in vscode.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+
+---
+
 
 **Enjoy!**

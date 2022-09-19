@@ -7,6 +7,7 @@ This is a vscode extension called "upload-ftp". It helps to upload files to FTP 
 This tool has these features now:
 - support create directories automatically;
 - support upload more than one file at a time;
+- support upload directoties;
 - support 'workspace' mode in vscode.
 ---
 ## Usage
@@ -22,7 +23,7 @@ The upload.json file format is easy like this:
         "user": "root",
         "password": "root"
     },
-    "files1": [
+    "files": [
         {
             "localfile": "/home/sean/Project/upload/test/TestApp",
             "remotefile": "/apps/test/TestApp"
@@ -30,6 +31,16 @@ The upload.json file format is easy like this:
         {
             "localfile": "/home/sean/Project/upload/test/Test.js",
             "remotefile": "/apps/test/test.js"
+        }
+    ],
+    "dirs":[
+        {
+            "localdir":"/run/mount/svcs/wifimg/program",
+            "remotedir":"/apps/tests/program"
+        },
+        {
+            "localdir":"/run/mount/svcs/tmsync",
+            "remotedir":"/apps/tests2"
         }
     ]
 }
@@ -39,6 +50,7 @@ After that, you can right click on the .vscode folder or .vscode father folder, 
 
 Of course, you can also just click the folder and use `alt + d` to upload quickly.
 
+![](https://i.postimg.cc/nh2k2xRZ/1663567855471.png)
 
 ---
 ## Known Issues
@@ -57,6 +69,10 @@ Of course, you can also just click the folder and use `alt + d` to upload quickl
 ### 0.0.2
 
 - Add icon.
+
+### 0.0.3
+
+- Support upload directories.
 
 
 
